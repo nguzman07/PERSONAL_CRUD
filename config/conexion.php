@@ -3,7 +3,7 @@
 		protected $dbh;
 		protected function conexion () {
 			try {
-                $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=crud2", "root", "");
+                $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=crud2", "root", "callofduty01");
                 return $conectar;
 			} catch(Exception $ex) {
                 print "ERROR DATABASE: " . $e->getMessage() . "<br/>";

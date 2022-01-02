@@ -37,6 +37,7 @@
     <link href="../../public/lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet">
 
     <link href="../../public/lib/datatables/jquery.dataTables.css" rel="stylesheet">
+    <link href="../../public/datatables/buttons.dataTables.min.css" rel="stylesheet"/>
     
     <!-- Bracket CSS -->
     <link rel="stylesheet" href="../../public/css/bracket.css">
@@ -47,7 +48,7 @@
     <!-- ########## START: LEFT PANEL ########## -->
     <div class="br-logo"><a href=""><span>[</span>C.R.U.D.<span>]</span></a></div>
     <div class="br-sideleft overflow-y-auto">
-      <label class="sidebar-label pd-x-15 mg-t-20">Menu de Opciones</label>
+      <label class="sidebar-label pd-x-15 mg-t-20">Funciones</label>
       <div class="br-sideleft-menu">
         <a href="../Home/" class="br-menu-link">
           <div class="br-menu-item">
@@ -59,12 +60,16 @@
         <a href="#" class="br-menu-link">
           <div class="br-menu-item">
             <i class="menu-item-icon icon ion-ios-filing-outline tx-24"></i>
-            <span class="menu-item-label">Mantenimiento</span>
+            <span class="menu-item-label">Menu de Opciones</span>
             <i class="menu-item-arrow fa fa-angle-down"></i>
           </div>
         </a>
         <ul class="br-menu-sub nav flex-column">
           <li class="nav-item"><a href="../MntProducto/" class="nav-link">Productos</a></li>
+          <li class="nav-item"><a href="../MntProducto/" class="nav-link">Create</a></li>
+          <li class="nav-item"><a href="../MntProducto/" class="nav-link">Read</a></li>
+          <li class="nav-item"><a href="../MntProducto/" class="nav-link">Update</a></li>
+          <li class="nav-item"><a href="../MntProducto/" class="nav-link">Delete</a></li>
         </ul>
       </div>
 
@@ -687,10 +692,13 @@
 
     <script src="../../public/lib/datatables/jquery.dataTables.js"></script>
     <script src="../../public/lib/datatables-responsive/dataTables.responsive.js"></script>
+
     <script src="../../public/datatables/dataTables.buttons.min.js"></script>
     <script src="../../public/datatables/buttons.html5.min.js"></script>
     <script src="../../public/datatables/buttons.colVis.min.js"></script>
     <script src="../../public/datatables/jszip.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <script type="text/javascript" scr="mntproducto.js"></script>
   </body>

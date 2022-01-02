@@ -3,7 +3,7 @@
         public function insert_producto($Nombre_Producto) {                      //CREATE
             $conectar = parent::conexion();
             parent::set_names();
-            $sql = "INSERT INTO tm_producto(Id_Producto, Nombre_Producto, Fecha_Creacion, Fecha_Modificacion, Fecha_Eliminacion, Estado) VALUES (NULL, ?, now(), NULL, NULL, 1)";
+            $sql = "INSERT INTO tm_producto(Id_Producto, Nombre_Producto, Fecha_Creacion, Fecha_Modificacion, Fecha_Eliminacion, Estado) VALUES (NULL, ?, now(), NULL, NULL, 1);";
             $sql = $conectar->prepare($sql);
             $sql->bindValue(1,$Nombre_Producto);
             $sql->execute();
