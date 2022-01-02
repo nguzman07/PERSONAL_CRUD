@@ -16,7 +16,7 @@ $(document).ready(function(){
 		            'pdf'
 		        ],
         "ajax":{
-            url: '../../controller/Producto.php?op=listar',
+            url: '../../controller/producto.php?op=listar',
             type : "get",
             dataType : "json",
             error: function(e){
