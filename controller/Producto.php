@@ -3,7 +3,7 @@
 	requiere_once("../models/Producto.php");
 	$producto = new Producto();
 
-	switch($_GETp["opc"]) {
+	switch($_GETp["op"]) {
 		case "listar":
 	    $datos=$area->get_producto();
 		$data= Array();

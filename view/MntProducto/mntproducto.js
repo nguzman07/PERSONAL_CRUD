@@ -1,4 +1,3 @@
-
 var tabla;
 
 function init() {
@@ -17,7 +16,7 @@ $(document).ready(function(){
 		            'pdf'
 		        ],
         "ajax":{
-            url: '../../controller/producto.php?op=listar',
+            url: '../../controller/Producto.php?op=listar',
             type : "get",
             dataType : "json",
             error: function(e){
