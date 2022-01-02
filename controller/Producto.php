@@ -1,9 +1,9 @@
 <?php
 	require_once("../config/conexion.php");
-	requiere_once("../models/Producto.php");
+	require_once("../models/Producto.php");
 	$producto = new Producto();
 
-	switch($_GETp["op"]) {
+	switch($_GET["op"]) {
 		case "listar":
 	    $datos=$area->get_producto();
 		$data= Array();
