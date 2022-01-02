@@ -725,6 +725,14 @@
     
     <script src="../../public/js/bracket.js"></script>
 
+    <script src="../../public/lib/datatables/jquery.dataTables.js"></script>
+    <script src="../../public/lib/datatables-responsive/dataTables.responsive.js"></script>
+
+    <script src="../../public/datatables/dataTables.buttons.min.js"></script>
+    <script src="../../public/datatables/buttons.html5.min.js"></script>
+    <script src="../../public/datatables/buttons.colVis.min.js"></script>
+    <script src="../../public/datatables/jszip.min.js"></script>
+
     <script type="text/javascript" scr="mntproducto.js"> </script>
   </body>
 </html>
