@@ -722,10 +722,9 @@
     <script src="../../public/lib/jquery-ui/jquery-ui.js"></script>
     <script src="../../public/lib/jquery-switchbutton/jquery.switchButton.js"></script>
     <script src="../../public/lib/peity/jquery.peity.js"></script>
+    
     <script src="../../public/js/bracket.js"></script>
 
-    <script src="../../public/lib/datatables/jquery.dataTables.js"></script>
-    <script src="../../public/lib/datatables-responsive/dataTables.responsive.js"></script>
-
+    <script type="text/javascript" scr="mntproducto.js"> </script>
   </body>
 </html>
