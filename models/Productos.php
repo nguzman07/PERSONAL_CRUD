@@ -1,6 +1,6 @@
 <?php
     class Producto extends Conectar {
-        public function insert_producto($Nombre_Producto) { //CREATE
+        public function insert_producto($Nombre_Producto) {                      //CREATE
             $conectar = parent::conexion();
             parent::set_names();
             $sql = "INSERT INTO tm_producto(Id_Producto, Nombre_Producto, Fecha_Creacion, Fecha_Modificacion, Fecha_Eliminacion, Estado) VALUES (NULL, ?, now(), NULL, NULL, 1)";
