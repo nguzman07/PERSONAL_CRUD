@@ -62,4 +62,10 @@ function editar(Id_Producto) {
 function eliminar(Id_Producto){
     console.log(Id_Producto);
 }
+
+$(document).on("click","#btnnuevo", function(){
+    $('#mdltitulo').html('Nuevo Registro');
+    $('#modalmantenimiento').modal('show');
+});
+
 init();

@@ -681,6 +681,8 @@
     </div><!-- br-mainpanel -->
     <!-- ########## END: MAIN PANEL ########## -->
 
+    <?php require_once("modalmantenimiento.php");?>
+    
     <script src="../../public/lib/jquery/jquery.js"></script>
     <script src="../../public/lib/popper.js/popper.js"></script>
     <script src="../../public/lib/bootstrap/bootstrap.js"></script>
