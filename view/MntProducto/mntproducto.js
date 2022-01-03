@@ -115,6 +115,7 @@ function eliminar(Id_Producto){
 $(document).on("click","#btnnuevo", function(){
     $('#mdltitulo').html('Nuevo Registro');
     $('#producto_form')[0].reset();
+    $('#Id_Producto').val('');
     $('#modalmantenimiento').modal('show');
 });
 
