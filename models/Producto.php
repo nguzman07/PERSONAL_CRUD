@@ -34,8 +34,8 @@
             parent::set_names();
             $sql = "UPDATE tm_producto SET Nombre_Producto=?, Fecha_Modificacion=now() WHERE Id_Producto=?";
             $sql = $conectar->prepare($sql);
-            $sql->bindValue(1,$Id_Producto);
-            $sql->bindValue(2,$Nombre_Producto);
+            $sql->bindValue(1,$Nombre_Producto);
+            $sql->bindValue(2,$Id_Producto);
             $sql->execute();
             return $resultado = $sql->fetchAll();
         }

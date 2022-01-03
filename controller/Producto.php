@@ -26,7 +26,7 @@
             break;
 
         case "guardaryeditar":
-            $datos=$producto->get_producto_x_id($POST["Id_Producto"]);
+            $datos=$producto->get_producto_x_id($_POST["Id_Producto"]);
             if(empty($_POST["Id_Producto"])) {
                 if(is_array($datos)==true and count($datos)==0) {
                     $producto->insert_producto($_POST["Nombre_Producto"]);
@@ -37,12 +37,13 @@
         break;
 
         case "mostrar":
-            $datos=$producto->get_producto_x_id($POST["Id_Producto"]);
+            $datos=$producto->get_producto_x_id($_POST["Id_Producto"]);
             if(is_array($datos)==true and count($datos)>0) {
                 foreach($datos as $row) {
                     $output["Id_Producto"] = $row["Id_Producto"];
                     $output["Nombre_Producto"] = $row["Nombre_Producto"];
                 }
+                echo json_encode($output);
             }
         break;
 
