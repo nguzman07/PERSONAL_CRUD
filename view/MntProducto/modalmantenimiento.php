@@ -7,10 +7,17 @@
                 </div>
                 <div class="modal-body">
                     <input type="hidden" id="Id_Producto" name="Id_Producto">
+                    
                     <div class="form-group">
                         <label class="form-label" for="Nombre_Producto">Nombre</label>
                         <input type="text" class="form-control" id="Nombre_Producto" name="Nombre_Producto" placeholder="Ingrese Nombre" required>
                     </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="Descripcion_Producto">Descripcion</label>
+                        <textarea row="3" class="form-control" id="Descripcion_Producto" name="Descripcion_Producto" placeholder="Ingrese Descripcion" required></textarea>
+                    </div>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-rounded btn-default" data-dismiss="modal">Cerrar</button>

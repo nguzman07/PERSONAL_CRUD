@@ -1,11 +1,12 @@
 <?php
     class Producto extends Conectar {
-        public function insert_producto($Nombre_Producto) {                      //CREATE
+        public function insert_producto($Nombre_Producto, $Descripcion_Producto) {                      //CREATE
             $conectar = parent::conexion();
             parent::set_names();
-            $sql = "INSERT INTO tm_producto(Id_Producto, Nombre_Producto, Fecha_Creacion, Fecha_Modificacion, Fecha_Eliminacion, Estado) VALUES (NULL, ?, now(), NULL, NULL, 1);";
+            $sql = "INSERT INTO tm_producto(Id_Producto, Nombre_Producto, Descripcion_Producto, Fecha_Creacion, Fecha_Modificacion, Fecha_Eliminacion, Estado) VALUES (NULL, ?, ?, now(), NULL, NULL, 1);";
             $sql = $conectar->prepare($sql);
             $sql->bindValue(1,$Nombre_Producto);
+            $sql->bindValue(2,$Descripcion_Producto);
             $sql->execute();
             return $resultado = $sql->fetchAll();
         }
@@ -29,13 +30,14 @@
             return $resultado = $sql->fetchAll();
         }
 
-        public function update_producto($Id_Producto, $Nombre_Producto) {               //UPDATE
+        public function update_producto($Id_Producto, $Nombre_Producto, $Descripcion_Producto) {               //UPDATE
             $conectar = parent::conexion();
             parent::set_names();
-            $sql = "UPDATE tm_producto SET Nombre_Producto=?, Fecha_Modificacion=now() WHERE Id_Producto=?";
+            $sql = "UPDATE tm_producto SET Nombre_Producto=?, Descripcion_Producto=?, Fecha_Modificacion=now() WHERE Id_Producto=?";
             $sql = $conectar->prepare($sql);
             $sql->bindValue(1,$Nombre_Producto);
-            $sql->bindValue(2,$Id_Producto);
+            $sql->bindValue(2,$Descripcion_Producto);
+            $sql->bindValue(3,$Id_Producto);
             $sql->execute();
             return $resultado = $sql->fetchAll();
         }

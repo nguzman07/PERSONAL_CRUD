@@ -666,6 +666,7 @@
                 <thead>
                   <tr>
                     <th class="wd-15p">Nombre del Producto</th>
+                    <th class="wd-15p">Descripcion del Producto</th>
                     <th class="wd-15p"> Editar</th>
                     <th class="wd-20p">Eliminar</th>
                   </tr>
