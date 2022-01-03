@@ -25,7 +25,7 @@
 
             break;
 
-        case "guardaryeliminar":
+        case "guardaryeditar":
             $datos=$producto->get_producto_x_id($POST["Id_Producto"]);
             if(empty($_POST["Id_Producto"])) {
                 if(is_array($datos)==true and count($datos)==0) {
