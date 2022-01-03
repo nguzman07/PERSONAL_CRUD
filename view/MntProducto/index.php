@@ -53,7 +53,7 @@
         <a href="../Home/" class="br-menu-link">
           <div class="br-menu-item">
             <i class="menu-item-icon icon ion-ios-home-outline tx-22"></i>
-            <span class="menu-item-label">Pantalla Principal</span>
+            <span class="menu-item-label">Dashboard</span>
           </div><!-- menu-item -->
         </a><!-- br-menu-link -->
 
@@ -660,13 +660,13 @@
       <div class="br-pagebody">
         <div class="br-section-wrapper">
             <h6 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Mantenimiento de Producto</h6>
-            <div class="table-wrapper">
+      <div class="table-wrapper">
               <table id="producto_data" class="table display responsive nowrap">
                 <thead>
                   <tr>
-                    <th class="wd-15p">Nombre</th>
-                    <th class="wd-15p"></th>
-                    <th class="wd-20p"></th>
+                    <th class="wd-15p">Nombre del Producto</th>
+                    <th class="wd-15p"> Editar</th>
+                    <th class="wd-20p">Eliminar</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -700,6 +700,6 @@
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-    <script type="text/javascript" scr="mntproducto.js"></script>
+    <script type="text/javascript" src="mntproducto.js"></script>
   </body>
 </html>
