@@ -60,7 +60,26 @@ function editar(Id_Producto) {
 }
 
 function eliminar(Id_Producto){
-    console.log(Id_Producto);
+    swal.fire({
+        title: 'CRUD',
+        text: "Desea Eliminar el Registro?",
+        icon: 'error',
+        showCancelButton: true,
+        confirmButtonText: 'Si',
+        cancelButtonText: 'No',
+        reverseButtons: true
+    }).then((result) => {
+        if (result.isConfirmed) {
+            $.post("../../controller/producto.php?op=eliminar",{Id_Producto:Id_Producto},function (data) {
+            });
+            $('#producto_data').DataTable().ajax.reload();	
+            swal.fire(
+                'Eliminado!',
+                'El registro se elimino correctamente.',
+                'success'
+            )
+        }
+    })
 }
 
 $(document).on("click","#btnnuevo", function(){
